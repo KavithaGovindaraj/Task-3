@@ -253,7 +253,7 @@ else:
 #Output:
 #The triplet whose sum is equal to 59 is: (9, 20, 30)
 
-1#0)
+#10)
 
 def has_zero_sum_sublist(lst):
     #Check if there is a sublist with sum equal to zero.
