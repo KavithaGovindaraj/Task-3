@@ -1,6 +1,6 @@
-"""
 
-1)
+#1)
+
 #given List
 numbers = [10, 501, 22, 37, 100, 999, 87, 351]
 
@@ -14,14 +14,18 @@ all_numbers = numbers.copy()
 print("Even numbers:", even_numbers)
 print("All numbers:", all_numbers)
 
-Output:
-Even numbers: [10, 22, 100]
-All numbers: [10, 501, 22, 37, 100, 999, 87, 351]
+
+#Output:
+#Even numbers: [10, 22, 100]
+#All numbers: [10, 501, 22, 37, 100, 999, 87, 351]
 
 
-2)
+
+#2)
+
+
 def is_prime(n):
-    """"Check if a number is a prime number.""""""
+    #Check if a number is a prime number.
     if n <= 1:
         return False
     if n == 2:
@@ -51,14 +55,14 @@ prime_count = len(prime_numbers)
 print("Prime numbers:", prime_numbers)
 print("Count of prime numbers:", prime_count)
 
-Output:
-Prime numbers: [37]
-Count of prime numbers: 1
+#Output:
+#Prime numbers: [37]
+#Count of prime numbers: 1
 
 
-3)
+#3)
 def is_happy_number(n):
-    """"Determine if a number is a happy number.""""""
+    #Determine if a number is a happy number.
     seen = set()
     while n != 1 and n not in seen:
         seen.add(n)
@@ -74,13 +78,13 @@ happy_count = sum(1 for number in numbers if is_happy_number(number))
 # Print the count of happy numbers
 print("Count of happy numbers:", happy_count)
 
-Output:
-Count of happy numbers: 2
+#Output:
+#Count of happy numbers: 2
 
 
-4)
+#4)
 def sum_first_and_last_digit(n):
-    """"Returns the sum of the first and last digit of an integer."""""
+   #Returns the sum of the first and last digit of an integer.
     # Convert the integer to a string to easily access the digits
     n_str = str(n)
     
@@ -96,13 +100,13 @@ number = 12345
 result = sum_first_and_last_digit(number)
 print(f"The sum of the first and last digit of {number} is {result}")
 
-Output:
- The sum of the first and last digit of 12345 is 6   
+#Output:
+# The sum of the first and last digit of 12345 is 6   
 
 
-5)
+#5)
 def min_diff_mangoes(bags, students):
-    """"Find the minimum difference between the maximum and minimum number of mangoes in distributed bags."""""
+    #Find the minimum difference between the maximum and minimum number of mangoes in distributed bags.
     # Sort the list of bags
     bags.sort()
     
@@ -125,12 +129,12 @@ result = min_diff_mangoes(bags, students)
 print(f"The minimum difference between the maximum and minimum mangoes in distributed bags is: {result}")
 
 
-Output:
-The minimum difference between the maximum and minimum mangoes in distributed bags is: 7
+#Output:
+#The minimum difference between the maximum and minimum mangoes in distributed bags is: 7
 
-6)
+#6)
 def find_duplicates(list1, list2, list3):
-    """"Find duplicates across three lists.""""
+    #Find duplicates across three lists.
     # Convert lists to sets
     set1, set2, set3 = set(list1), set(list2), set(list3)
     
@@ -148,13 +152,13 @@ list3 = [5, 6, 7, 8, 9, 10]
 duplicates = find_duplicates(list1, list2, list3)
 print("Duplicates in the three lists are:", duplicates)
 
-Output:
-Duplicates in the three lists are: [5, 6]
+#Output:
+#Duplicates in the three lists are: [5, 6]
 
 
-7)
+#7)
 def first_non_repeating_element(lst):
-    """"Find the first non-repeating element in a given list of integers.""""""
+    #Find the first non-repeating element in a given list of integers.
     # Create a dictionary to store the count of each element
     count_dict = {}
     
@@ -177,13 +181,13 @@ lst = [4, 5, 1, 2, 1, 2, 4, 3]
 result = first_non_repeating_element(lst)
 print(f"The first non-repeating element is: {result}")
 
-Output:
-The first non-repeating element is: 5
+#Output:
+#The first non-repeating element is: 5
 
 
-8)
+#8)
 def find_min_in_rotated_sorted_list(nums):
-    """"Find the minimum element in a rotated and sorted list.""""""
+    #Find the minimum element in a rotated and sorted list.
     if not nums:
         return None  # Return None if the list is empty
     
@@ -208,14 +212,14 @@ nums = [4, 5, 6, 7, 0, 1, 2]
 result = find_min_in_rotated_sorted_list(nums)
 print(f"The minimum element in the rotated and sorted list is: {result}")
 
-Output:
-The minimum element in the rotated and sorted list is: 0
+#Output:
+#The minimum element in the rotated and sorted list is: 0
 
 
 
-9)
+#9)
 def find_triplet(lst, target):
-    """"Find a triplet in the list whose sum is equal to the target value."""""
+    #Find a triplet in the list whose sum is equal to the target value.
     lst.sort()
     n = len(lst)
     
@@ -246,13 +250,13 @@ else:
     print(f"No triplet found with sum equal to {target}")
 
 
-Output:
-The triplet whose sum is equal to 59 is: (9, 20, 30)
+#Output:
+#The triplet whose sum is equal to 59 is: (9, 20, 30)
 
-10)
+1#0)
 
 def has_zero_sum_sublist(lst):
-    """"Check if there is a sublist with sum equal to zero.""""
+    #Check if there is a sublist with sum equal to zero.
     # Create a set to store the cumulative sums
     cum_sum_set = set()
     
@@ -279,18 +283,6 @@ if result:
 else:
     print("There is no sub-list with sum equal to zero.")
 
-Output:
+#Output:
 
-There is a sub-list with sum equal to zero.
-
-"""
-
-
-
-
-
-
-
-
-
-
+#There is a sub-list with sum equal to zero.
